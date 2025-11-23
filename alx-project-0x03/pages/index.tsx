@@ -5,8 +5,8 @@ interface PageRouteProps {
   pageRoute: string
 }
 
-export default function Home() {
-  const router = useRouter()
+const Home = () => {
+  const router = useRouter();
 
   // Imeperative routing with useRouter
   const routeToNextPage  = ({ pageRoute }: PageRouteProps) => {
@@ -33,3 +33,5 @@ export default function Home() {
     </div>
   );
 }
+
+export default Home;
